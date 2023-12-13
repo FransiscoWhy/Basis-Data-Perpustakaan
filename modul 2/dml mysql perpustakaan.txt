@@ -1,0 +1,116 @@
+
+==================
+
+insert into mahasiswa values('A-06012','Disha Fitriani','14-Feb-1988','P','7789309','Jl. Sapphir No. 5 Bdg','dishacute@yahoo.com');
+insert into mahasiswa values('B-06029','Jaka Pradipta','20-Jan-1988','L','9867678','Sukabirus 88a','Knight_of_hell@gmail.com');
+insert into mahasiswa values('A-07211','Rini Agustin','17-Aug-1989','P','7793022','Jl. Mawar No. 5 Jkt','achiell@ymail.com');
+insert into mahasiswa values('A-07094','Ujang Marujang','15-May-1989','L','3823999','Jl. Kepatihan Timur','ujangkasep@yahoo.co.id');
+insert into mahasiswa values('A-08125','Donni Hutapea','20-Sep-1990','L','9920390','Kosan Blackhouse','Don_20@yahoo.com');
+insert into mahasiswa values('B-06021','Yusantina C.','28-Mar-1988','P','9928909','Jl. Rantau no.1','pinkgirlyever@yahoo.co.id');
+insert into mahasiswa values('B-07001','Anna Apriliana','03-Apr-1989','P','9920829','Jl. Galaxi No. 29','anna.apriliana@ymail.com');
+insert into mahasiswa values('B-08100','Alyssa S.','25-Dec-1991','P','7283900','Jl. Lentera No. 12','alyssa.s@gmail.com');
+insert into mahasiswa values('A-06303','Annissa W.','20-Jun-1989','P','7289202','Jl. Wiro No. 212','rev.nissa@gmail.com');
+insert into mahasiswa values('B-06902','Uya Kuya','29-Feb-1988','L','8982989','Jl. Kecubung No. 5','uyaemangkuya@kuda.com');
+
+
+==================
+
+insert into supplier values('0002','CV. Setia Karya','Jl. Matahari no.1-2','3487290');
+insert into supplier values('0003','CV. Didik Guna','Jl. Sukabumi no.102','3476989');
+insert into supplier values('0005','CV. Abadi','Jl. Rasamala No. C7','7348394');
+insert into supplier values('0001','CV. Cahaya Ilmu','Jl. Pendidikan No.1','2920090');
+insert into supplier values('0004','CV. Palasarionline.com','Jl. Palasari No. 10','9938899');
+
+
+
+=================
+
+insert into lokasi values('L002','Lemari 4');
+insert into lokasi values('L005','Lemari 1');
+insert into lokasi values('L001','Lemari 3');
+insert into lokasi values('L003','Lemari 5');
+insert into lokasi values('L004','Lemari 6');
+insert into lokasi values('L006','Lemari 2');
+
+
+=================
+
+insert into petugas values('0005','Jajang','Gg. Slamet No.C1','1231342');
+insert into petugas values('0001','Jakaria','Jl. Perintis, kav. 12',null);
+insert into petugas values('0002','Mamat','Gg. Senggol no.302','1223427');
+insert into petugas values('0003','Ridho','Gg. Goyang No.55',null);
+insert into petugas values('0004','Tatang','Gg. Slamet No. C24','1232341');
+
+
+================
+
+insert into kategori values('0001','Fiksi','L004');
+insert into kategori values('0002','Science (Ilmu Umum)','L005');
+insert into kategori values('0004','Politik','L001');
+insert into kategori values('0005','Agama','L002');
+insert into kategori values('0006','Komputer','L006');
+insert into kategori values('0003','Kuliner','L003');
+
+
+=================
+
+insert into inventarisperpus values('B-0006','Meja Administrasi 1','12-Mar-2008','Baik','0002');
+insert into inventarisperpus values('B-0001','Kursi Panjang 1','20-Jun-2006','Baik','0005');
+insert into inventarisperpus values('B-0002','Kursi Panjang 2','20-Jun-2006','Baik','0005');
+insert into inventarisperpus values('B-0003','Kursi Panjang 3','20-Jun-2006','Baik','0004');
+insert into inventarisperpus values('B-0005','Meja Belajar 1','29-Sep-2007','Perlu diganti','0003');
+insert into inventarisperpus values('B-0009','Meja Administrasi 2','30-Apr-2008','Baik','0002');
+insert into inventarisperpus values('B-0008','Rak Arsip','22-Aug-2008','Baik','0001');
+insert into inventarisperpus values('B-0007','Meja Belajar 2','29-Sep-2007','Perlu diganti','0002');
+insert into inventarisperpus values('B-0004','Meja Belajar 3','09-Jan-2006','Baik','0001');
+
+
+==============
+
+insert into rekappeminjaman values('0001','15-Feb-2010','0001');
+insert into rekappeminjaman values('0002','16-Feb-2010','0002');
+insert into rekappeminjaman values('0003','17-Feb-2010','0003');
+insert into rekappeminjaman values('0004','18-Feb-2010','0004');
+insert into rekappeminjaman values('0005','19-Feb-2010','0005');
+
+
+================
+insert into buku values('FIK-0020','Bintang Kejoraku','Ronald P. Pohan','Buku Sukses',2003,'13-Mar-2003',25000,'0003','0001');
+insert into buku values('POL-0012','Uang Rakyat Kemana?','Effendi Gazali','Elex Media Komputindo',2008,'20-Aug-2009',55000,'0001','0004');
+insert into buku values('SCI-0102','How to eat the sun','Thomas A. Edison','Backdoor Publishing',1943,'19-Apr-1990',210000,'0001','0002');
+insert into buku values('SCI-2001','The Goal','Steven Gerrard','Liverpool Wall',2006,'10-Sep-2008',121000,'0002','0002');
+insert into buku values('FIK-9291','Kobo Chan','Masashi Ueda','Elex Media Komputindo',1995,'20-Jul-1995',2000,'0003','0001');
+insert into buku values('AGA-0002','Tuntunan Shalat Lengkap','H. Umar','Dept. Agama Republik Indonesia',2000,'24-Feb-2000',25000,'0001','0005');
+insert into buku values('KUL-0212','Wisata Kuliner Bandung','Bondan','Gagas Media',2008,'29-Dec-2008',35000,'0002','0003');
+
+insert into buku values('KOM-0199','Basis Data Oracle','Iman Hakim','Informatika',2008,'29-Dec-2008',55000,'0004','0006');
+insert into buku values('KUL-0105','Membuat aneka kue kering dan jajanan pasar','Ajeng Widarti','Boga Rasa',2007,'10-Jul-2007',36000,'0005','0003');
+insert into buku values('FIK-0017','Jangan Engkau Pergi','Alex Junior','Erlangga',2001,'12-Sep-2002',20000,'0003','0001');
+insert into buku values('SCI-2286','The Lost Symbol','Dan Brown','Gramedia',2010,'01-Feb-2010',145000,'0001','0002');
+insert into buku values('POL-0109','Matinya Supremasi Hukum di Indonesia','Fathir Muhammad','Pena Dunia',2007,'12-Jan-2008',60000,'0001','0004');
+insert into buku values('SCI-1193','Da Vinci Code','Dan Brown','Gramedia',2006,'13-Mar-2006',128000,'0002','0002');
+
+insert into buku values('KOM-1021','Membangun kerajaan bisnis melalui facebook','Ilham Munandar','Guna Karya Media',2009,'20-Oct-2009',12000,'0005','0006');
+insert into buku values('SCI-2012','Benarkah 2012 Akhir Dunia?','Udin Marudin','Benteng',2009,'29-Aug-2009',65000,'0001','0002');
+insert into buku values('KOM-0092','Pemrograman AJAX','Budi Prihatin','Andi Jogjakarta',2009,'02-May-2009',55000,'0004','0006');
+insert into buku values('KOM-0012','Kemanan Jaringan untuk Transaksi Perbankan','Asep Saepudin','Informatika',2009,'20-Oct-2009',47500,'0004','0006');
+insert into buku values('FIK-0218','Doraemon','Fujiko F. Fujio','Elex Media Komputindo',1995,'20-Jul-1995',20000,'0003','0001');
+insert into buku values('KOM-0173','Animasi Flash CS3','Rahman Setia','Andi Jogjakarta',2009,'14-Dec-2009',77500,'0005','0006');
+
+
+==============
+insert into dipinjam values('0001','15-Feb-2010','16-Feb-2010','FIK-9291','A-07094','0001');
+insert into dipinjam values('0002','15-Feb-2010','16-Feb-2010','KOM-0199','B-07001','0001');
+insert into dipinjam values('0003','15-Feb-2010','16-Feb-2010','KOM-0092','A-08125','0001');
+insert into dipinjam values('0004','16-Feb-2010','17-Feb-2010','SCI-0102','B-08100','0002');
+insert into dipinjam values('0005','16-Feb-2010','17-Feb-2010','SCI-1193','B-06021','0002');
+insert into dipinjam values('0006','16-Feb-2010','17-Feb-2010','KUL-0105','B-07001','0002');
+insert into dipinjam values('0007','17-Feb-2010','18-Feb-2010','KUL-0212','A-06012','0003');
+insert into dipinjam values('0008','17-Feb-2010','18-Feb-2010','KOM-1021','A-07094','0003');
+insert into dipinjam values('0009','18-Feb-2010','19-Feb-2010','SCI-2001','A-07211','0004');
+insert into dipinjam values('0010','18-Feb-2010','19-Feb-2010','KOM-0012','A-07211','0004');
+insert into dipinjam values('0011','18-Feb-2010','19-Feb-2010','KOM-0173','A-06303','0004');
+insert into dipinjam values('0012','19-Feb-2010','20-Feb-2010','FIK-0218','A-06012','0005');
+insert into dipinjam values('0013','19-Feb-2010','20-Feb-2010','SCI-2012','A-06012','0005');
+insert into dipinjam values('0014','19-Feb-2010','20-Feb-2010','SCI-2286','B-06021','0005');
+insert into dipinjam values('0015','19-Feb-2010','20-Feb-2010','KOM-0199','B-08100','0005');

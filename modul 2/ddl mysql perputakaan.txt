@@ -1,0 +1,112 @@
+create table mahasiswa
+(
+NIM     char(7),
+Nama_mahasiswa  varchar(50),
+TTL     date,
+Jns_kelamin char(1),
+telp        char(7),
+alamat      varchar(50),
+email       varchar(50),
+constraint pk_mahasiswa primary key(NIM)
+);
+
+==============================================
+
+create table supplier
+(
+id_supplier char(4),
+nama_supplier   varchar(50),
+alamat_supplier varchar(50),
+no_telp     char(7),
+constraint pk_supplier primary key(id_supplier)
+);
+
+==============================================
+
+create table lokasi
+(
+id_lokasi   char(4),
+letak       char(8),
+constraint pk_lokasi primary key(id_lokasi)
+);
+
+================================================
+
+create table petugas
+(
+id_petugas  char(4),
+nama_petugas    varchar(50),
+alamat      varchar(50),
+no_telp     char(7),
+constraint pk_petugas primary key(id_petugas)
+);
+
+================================================
+
+create table kategori
+(
+id_kategori char(4),
+jenis       varchar(50),
+id_lokasi   char(4),
+constraint pk_kategori primary key(id_kategori),
+constraint fk_kategori_lokasi foreign key(id_lokasi) references lokasi (id_lokasi) on delete cascade
+);
+
+===============================================
+
+create table inventarisperpus
+(
+id_inventaris   char(6),
+nama_inventaris varchar(50),
+tgl_beli    date,
+kondisi     varchar(50),
+id_petugas  char(4),
+constraint pk_inventaris primary key(id_inventaris),
+constraint fk_inventaris_petugas foreign key(id_petugas) references petugas(id_petugas) on delete cascade
+);
+
+==============================================
+
+
+create table rekappeminjaman
+(
+id_rekap    char(4),
+tgl_rekap   date,
+id_petugas  char(4),
+constraint pk_rekap primary key(id_rekap),
+constraint fk_rekap_petugas foreign key(id_petugas) references petugas(id_petugas) on delete cascade
+);
+
+===============================================
+
+create table buku
+(
+kode_buku   char(8),
+judul       varchar(50),
+pengarang   varchar(50),
+penerbit    varchar(50),
+tahun       int(4),
+tgl_pembelian   date,
+harga_beli  int,
+id_supplier char(4),
+id_kategori char(4),
+constraint pk_buku primary key(kode_buku),
+constraint fk_buku_supplier foreign key(id_supplier) references supplier(id_supplier) on delete cascade,
+constraint fk_buku_kategori foreign key(id_kategori) references kategori(id_kategori) on delete cascade
+);
+
+===============================================
+
+create table dipinjam
+(
+id_pinjam   char(4),
+tgl_pinjam  date,
+tgl_kembali date,
+kode_buku   char(8),
+NIM     char(7),
+id_rekap    char(4),
+constraint pk_dipinjam primary key(id_pinjam),
+constraint fk_dipinjam_buku foreign key(kode_buku) references buku(kode_buku) on delete cascade,
+constraint fk_dipinjam_mahasiswa foreign key(NIM) references mahasiswa(NIM) on delete cascade,
+constraint fk_dipinjam_rekap foreign key(id_rekap) references rekappeminjaman(id_rekap) on delete cascade
+);
